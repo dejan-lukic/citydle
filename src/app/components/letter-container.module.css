@@ -1,0 +1,43 @@
+@keyframes onTypeCell {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+  }
+
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+.cell-fill-animation {
+  -webkit-animation: onTypeCell linear;
+  animation: onTypeCell linear
+}
+
+.cell-fill-animation,.cell-reveal {
+  -webkit-animation-duration: .35s;
+  animation-duration: .35s
+}
+
+.cell-reveal {
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear
+}
+
+.letterContainerBox {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 2px solid rgb(226 232 240);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
