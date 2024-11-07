@@ -4,3 +4,12 @@
   margin-top: 10px;
   gap: .125rem;
 }
+
+.distance {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  gap: 4px;
+  margin-left: 4px;
+  width: 100px;
+}

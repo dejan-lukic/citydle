@@ -13,7 +13,7 @@ export function haversineDistance(location1: LatLng, location2: LatLng) {
   const deltaLon = degreesToRadians(location2.lng - location1.lng);
 
   const lat1 = degreesToRadians(location1.lat);
-  const lat2 = degreesToRadians(location2.lng);
+  const lat2 = degreesToRadians(location2.lat);
 
   // a is the square of half the chord length between the points
   const a = Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +

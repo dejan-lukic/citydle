@@ -29,6 +29,15 @@ export default function GuessRow(
           }
         />;
       })}
+
+      {guess && (
+        <div className={styles.distance}>
+          {Math.round(Math.floor(guess.distanceToCorrectCity))} km
+          <span role="img" aria-label="direction">
+            {guess.correctCity ? '🎯' : guess.directionEmoji}
+          </span>
+        </div>
+      )}
     </div>
   );
 }

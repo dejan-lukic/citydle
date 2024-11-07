@@ -10,13 +10,15 @@ interface CitiesAutocompleteProps {
   inputValue: string;
   onCitySelected: (city: City) => void;
   onCityTyping?: (city: string) => void;
+  disabled?: boolean;
 }
 
 const CitiesAutocomplete: React.FC<CitiesAutocompleteProps> =
-  ({cities, inputValue, onCitySelected, onCityTyping}) => {
+  ({cities, inputValue, onCitySelected, onCityTyping, disabled}) => {
     return (
       <Autocomplete
         sx={{width: '100%'}}
+        disabled={disabled}
         options={cities}
         getOptionLabel={(option) => option.name}
         renderInput={(params) => <TextField
