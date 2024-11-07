@@ -3731,3 +3731,9 @@ export const getCities = (): City[] => {
     };
   });
 }
+
+export const getRandomCity = (): City => {
+  const cities = getCities();
+
+  return cities[Math.floor(Math.random() * cities.length)];
+}

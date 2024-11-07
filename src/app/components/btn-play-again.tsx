@@ -1,5 +1,5 @@
 import styles from "@/app/components/citydle.module.css";
-import { getCities } from "@/app/cities";
+import { getRandomCity } from "@/app/cities";
 import { useGameContext } from "@/app/context/game-context";
 
 export default function BtnPlayAgain() {
@@ -10,7 +10,7 @@ export default function BtnPlayAgain() {
       className={styles.playAgainButton}
       onClick={() => setGameState({
         guesses: [],
-        cityToGuess: getCities()[Math.floor(Math.random() * getCities().length)]
+        cityToGuess: getRandomCity(),
       })}
     >
       Play again
