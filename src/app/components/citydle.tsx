@@ -10,6 +10,7 @@ import { City } from "@/app/types/city";
 import { haversineDistance } from "@/app/distance";
 import { calculateDirection } from "@/app/direction";
 import BtnPlayAgain from "@/app/components/btn-play-again";
+import Navbar from "@/app/components/navbar";
 
 export default function Citydle() {
   const {gameState, setGameState} = useGameContext();
@@ -50,9 +51,7 @@ export default function Citydle() {
 
   return (
     <div>
-      <h1 className={styles.title}>
-        Citydle
-      </h1>
+      <Navbar />
 
       <CitiesAutocomplete
         disabled={!gameOngoing}
