@@ -1,34 +1,27 @@
 @keyframes onTypeCell {
   0% {
-    -webkit-transform: scale(1);
     transform: scale(1)
   }
 
   50% {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1)
   }
 
   to {
-    -webkit-transform: scale(1);
     transform: scale(1)
   }
 }
 
-.cell-fill-animation {
-  -webkit-animation: onTypeCell linear;
+.cellFillAnimation {
   animation: onTypeCell linear
 }
 
-.cell-fill-animation,.cell-reveal {
-  -webkit-animation-duration: .35s;
+.cellFillAnimation,.cell-reveal {
   animation-duration: .35s
 }
 
 .cell-reveal {
-  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear
 }
 
