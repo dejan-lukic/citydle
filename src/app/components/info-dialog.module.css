@@ -1,0 +1,22 @@
+.dialogContent {
+  max-width: 430px;
+}
+
+.dialogTitle {
+  text-align: center;
+}
+
+.dialogSubtitle {
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.exampleText {
+  text-align: center;
+  margin-top: 8px;
+}
