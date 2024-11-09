@@ -21,12 +21,7 @@ export default function GuessRow(
         return <LetterContainer
           key={index}
           letter={letter}
-          backgroundColor={
-            guess?.correctCity ? 'rgb(34 197 94)' :
-            guess?.correctCountry ? 'rgb(234 179 8)' :
-            guess?.correctContinent ? 'rgb(249 115 22)' :
-            ''
-          }
+          guess={guess}
         />;
       })}
 

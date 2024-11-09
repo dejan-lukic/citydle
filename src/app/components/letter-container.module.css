@@ -12,17 +12,34 @@
   }
 }
 
+@keyframes revealCell {
+  0% {
+    transform: rotateX(0deg)
+  }
+
+  50% {
+    background-color: unset;
+    border-color: unset;
+  }
+
+  50.1% {
+    background-color: var(--target-color);
+    border-color: var(--target-color);
+  }
+
+  to {
+    transform: rotateX(180deg);
+    background-color: var(--target-color);
+    border-color: var(--target-color);
+  }
+}
+
 .cellFillAnimation {
-  animation: onTypeCell linear
+  animation: onTypeCell linear;
 }
 
-.cellFillAnimation,.cell-reveal {
-  animation-duration: .35s
-}
-
-.cell-reveal {
-  animation-fill-mode: backwards;
-  animation-timing-function: linear
+.cellRevealAnimation {
+  animation: revealCell linear;
 }
 
 .letterContainerBox {
@@ -34,4 +51,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.revealed {
+  background-color: var(--target-color);
+  border-color: var(--target-color);
 }
