@@ -36,6 +36,7 @@ const CitiesAutocomplete: React.FC<CitiesAutocompleteProps> =
         onInputChange={(_, value) => {
           onCityTyping?.(value);
         }}
+        autoHighlight={true}
       />
     );
   };
