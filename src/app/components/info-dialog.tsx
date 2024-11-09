@@ -69,7 +69,7 @@ const InfoDialog: React.FC<InfoDialogProps> = ({open, onClose}) => {
 
         <DialogContentText className={styles.exampleText}>
           Now the continent is correct, but the country is not, so the guess is orange.
-          So the correct city is in Europe, but not in Serbia.
+          The correct city is in Europe, but not in Serbia.
         </DialogContentText>
 
         <GuessRow
