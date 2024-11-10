@@ -10,8 +10,8 @@ import {
   DialogTitle,
   IconButton
 } from "@mui/material";
-import GuessRow from "@/app/components/guess-row";
-import { City } from "@/app/types/city";
+import GuessRow from "@/app/citydle/components/guess-row";
+import { City } from "@/app/citydle/types/city";
 
 interface InfoDialogProps {
   open: boolean;

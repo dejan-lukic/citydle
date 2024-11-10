@@ -3,7 +3,7 @@
 import React from 'react';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
-import type { City } from "@/app/types/city";
+import type { City } from "@/app/citydle/types/city";
 
 interface CitiesAutocompleteProps {
   cities: City[];

@@ -1,6 +1,8 @@
+"use client";
+
 import React, { createContext, useState } from 'react';
-import { GameState } from "@/app/types/game-state";
-import { getRandomCity } from "@/app/cities";
+import { GameState } from "@/app/citydle/types/game-state";
+import { getRandomCity } from "@/app/citydle/cities";
 
 interface GameContextProps {
   gameState: GameState;

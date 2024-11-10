@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import styles from "./letter-container.module.css";
-import { Guess } from "@/app/types/game-state";
+import { Guess } from "@/app/citydle/types/game-state";
 
 const ANIMATION_DURATION = 350;
 

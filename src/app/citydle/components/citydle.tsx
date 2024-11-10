@@ -1,16 +1,16 @@
 "use client";
 
 import styles from "./citydle.module.css";
-import CitiesAutocomplete from "@/app/components/cities-autocomplete";
-import { getCities } from "@/app/cities";
-import GuessRow from "@/app/components/guess-row";
-import { useGameContext } from "@/app/context/game-context";
-import { Guess } from "@/app/types/game-state";
-import { City } from "@/app/types/city";
-import { haversineDistance } from "@/app/distance";
-import { calculateDirection } from "@/app/direction";
-import BtnPlayAgain from "@/app/components/btn-play-again";
-import Navbar from "@/app/components/navbar";
+import CitiesAutocomplete from "@/app/citydle/components/cities-autocomplete";
+import { getCities } from "@/app/citydle/cities";
+import GuessRow from "@/app/citydle/components/guess-row";
+import { useGameContext } from "@/app/citydle/context/game-context";
+import { Guess } from "@/app/citydle/types/game-state";
+import { City } from "@/app/citydle/types/city";
+import { haversineDistance } from "@/app/citydle/distance";
+import { calculateDirection } from "@/app/citydle/direction";
+import BtnPlayAgain from "@/app/citydle/components/btn-play-again";
+import Navbar from "@/app/citydle/components/navbar";
 
 export default function Citydle() {
   const {gameState, setGameState} = useGameContext();

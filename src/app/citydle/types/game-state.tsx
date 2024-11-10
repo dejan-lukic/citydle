@@ -1,4 +1,4 @@
-import { City } from "@/app/types/city";
+import { City } from "@/app/citydle/types/city";
 
 export type Guess = {
   city: City;

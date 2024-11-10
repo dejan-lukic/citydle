@@ -1,4 +1,4 @@
-import type { City } from "@/app/types/city";
+import type { City } from "@/app/citydle/types/city";
 
 const cities: {
   [name: string]: [

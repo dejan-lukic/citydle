@@ -1,6 +1,6 @@
-import styles from "@/app/components/citydle.module.css";
-import { getRandomCity } from "@/app/cities";
-import { useGameContext } from "@/app/context/game-context";
+import styles from "@/app/citydle/components/citydle.module.css";
+import { getRandomCity } from "@/app/citydle/cities";
+import { useGameContext } from "@/app/citydle/context/game-context";
 
 export default function BtnPlayAgain() {
   const {setGameState} = useGameContext();

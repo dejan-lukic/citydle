@@ -1,4 +1,4 @@
-import type { LatLng } from "@/app/types/location";
+import type { LatLng } from "@/app/citydle/types/location";
 
 function degreesToRadians(degrees: number) {
   return degrees * (Math.PI / 180);

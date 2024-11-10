@@ -1,4 +1,4 @@
-import type { LatLng } from "@/app/types/location";
+import type { LatLng } from "@/app/citydle/types/location";
 
 const EARTH_RADIUS_KM = 6371;
 

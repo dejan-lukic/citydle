@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from "./letter-row.module.css";
 import LetterContainer from './letter-container';
-import { Guess } from "@/app/types/game-state";
+import { Guess } from "@/app/citydle/types/game-state";
 
 export default function GuessRow(
   {guess = undefined, partialGuess = undefined, maxLength = 16}: {
