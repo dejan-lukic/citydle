@@ -65,6 +65,7 @@ export default function Worldle() {
       <WorldleGuessGrid
         className={styles.worldleGuessGrid}
         guesses={gameState.guesses}
+        gameOnGoing={isGameOngoing}
       />
 
       <WorldleGameOverModal

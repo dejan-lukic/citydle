@@ -6,10 +6,11 @@ import { Guess } from "@/app/worldle/types/game-state";
 interface WorldleGuessGridProps {
   className?: string;
   guesses: Guess[];
+  gameOnGoing: boolean;
 }
 
 const WorldleGuessGrid: React.FC<WorldleGuessGridProps> = (
-  { className, guesses }
+  { className, guesses, gameOnGoing }
 ) => {
   return (
     <Stack spacing={".25rem"} className={className}>
@@ -20,9 +21,11 @@ const WorldleGuessGrid: React.FC<WorldleGuessGridProps> = (
         />
       ))}
 
-      {Array.from({length: 6 - guesses.length}).map((_, index) => (
-        <WorldleGuessRow key={index} />
-      ))}
+      {gameOnGoing && (
+        Array.from({length: 6 - guesses.length}).map((_, index) => (
+          <WorldleGuessRow key={index} />
+        ))
+      )}
     </Stack>
   );
 }

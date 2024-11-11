@@ -38,8 +38,13 @@
   align-items: center;
 }
 
+.worldleGuessRow {
+  height: 2rem;
+}
+
 .worldleGuessRow > * {
   border: 1px solid #FFF;
   border-radius: 0.25rem;
   text-align: center;
+  align-content: center;
 }
