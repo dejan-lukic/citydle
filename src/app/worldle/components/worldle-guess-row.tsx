@@ -3,6 +3,7 @@ import styles from "./worldle-guess-row.module.css";
 import { Guess } from "@/app/worldle/types/game-state";
 import { Stack } from "@mui/system";
 import { Typography } from "@mui/material";
+import CountUp from "react-countup";
 
 interface WorldleGuessRowProps {
   guess?: Guess;
@@ -66,7 +67,11 @@ const WorldleGuessRow: React.FC<WorldleGuessRowProps> = (
         </div>
 
         <Typography className={styles.worldleAnimatedAccuracy}>
-          {guess.accuracy}%
+          <CountUp
+            end={guess.accuracy}
+            suffix="%"
+            duration={(SQUARE_ANIMATION_LENGTH * 5) / 1000}
+          />
         </Typography>
       </div>
     );
