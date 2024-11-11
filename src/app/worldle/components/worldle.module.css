@@ -2,6 +2,10 @@
   height: 100svh;
 }
 
-.worldleGuessInput {
+.worldleGuessGrid {
+  margin-top: 28px;
+}
+
+.worldleCountryAutocomplete {
   margin-top: 12px;
 }

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Worldle from "@/app/worldle/components/worldle";
+import { GameProvider } from "@/app/worldle/context/game-context";
 import styles from "@/app/styles/game.module.css";
 
 export const metadata: Metadata = {
@@ -10,7 +11,9 @@ export const metadata: Metadata = {
 export default function WorldleHomePage() {
   return (
     <div className={styles.gamePage}>
-      <Worldle />
+      <GameProvider>
+        <Worldle/>
+      </GameProvider>
     </div>
   );
 }

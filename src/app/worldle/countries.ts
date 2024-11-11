@@ -1962,3 +1962,7 @@ export const countries: Country[] = [
     name: "Zimbabwe",
   }
 ];
+
+export const getRandomCountry = () => {
+  return countries[Math.floor(Math.random() * countries.length)];
+};

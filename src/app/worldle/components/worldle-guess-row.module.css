@@ -1,5 +1,11 @@
-.worldleGuessRow {
-  width: 100%;
+.worldleEmptyGuessRow {
   height: 2rem;
   background-color: #293c6c;
+  border-radius: 0.25rem;
+}
+
+.worldleGuessRow > * {
+  border: 1px solid #FFF;
+  border-radius: 0.25rem;
+  text-align: center;
 }
