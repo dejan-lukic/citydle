@@ -12,7 +12,7 @@ const WorldleCountry: React.FC<WorldleCountryProps> = (
   const [svg, setSvg] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(`/images/countries/${countryCode}.svg`)
+    fetch(`/images/countries/${countryCode.toLowerCase()}.svg`)
       .then(response => response.text())
       .then(svg => {
         svg = svg.replace(/fill="#[0-9a-f]+"/g, `fill="#fff"`);
