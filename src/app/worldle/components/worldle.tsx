@@ -13,6 +13,7 @@ import { Guess } from "@/app/worldle/types/game-state";
 import { haversineDistance } from "@/app/citydle/distance";
 import { calculateDirection } from "@/app/citydle/direction";
 import WorldleGameOverModal from "@/app/worldle/components/worldle-game-over-modal";
+import { SQUARE_ANIMATION_LENGTH } from "@/app/worldle/components/worldle-guess-row";
 
 export default function Worldle() {
   const {gameState, setGameState, resetGame} = useGameContext();
@@ -48,7 +49,13 @@ export default function Worldle() {
   const isGameOngoing = !gameState.didWin && !gameState.didLose;
 
   useEffect(() => {
-    setDialogOpen(!isGameOngoing);
+    if (isGameOngoing) {
+      setDialogOpen(false);
+    } else {
+      setTimeout(() => {
+        setDialogOpen(true);
+      }, SQUARE_ANIMATION_LENGTH * 6);
+    }
   }, [isGameOngoing]);
 
   return (

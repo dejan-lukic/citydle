@@ -19,7 +19,7 @@ function generateSquareCharacters(accuracy: number): string[] {
   return characters;
 }
 
-const SQUARE_ANIMATION_LENGTH = 150;
+export const SQUARE_ANIMATION_LENGTH = 150;
 
 const WorldleGuessRow: React.FC<WorldleGuessRowProps> = (
   { guess }
