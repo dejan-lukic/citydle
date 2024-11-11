@@ -22,16 +22,16 @@ function calculateBearing(location1: LatLng, location2: LatLng) {
 
 // Main function to determine the direction
 export function calculateDirection(location1: LatLng, location2: LatLng, averageBearings: boolean) {
+  if (location1.lat === location2.lat && location1.lng === location2.lng) {
+    // If both locations are the same, return the target emoji 🎯
+    return "\ud83c\udfaf"; // 🎯
+  }
+
   // Calculate the initial bearing from the specified location to the reference location
   const initialBearing = calculateBearing(location1, location2);
 
   // Calculate the reverse bearing (from reference location to specified location)
   const reverseBearing = (calculateBearing(location2, location1) + 180) % 360;
-
-  // If the specified location is the same as the reference location, return the target emoji
-  // if (A === locationId) {
-  //   return "\ud83c\udfaf"; // 🎯
-  // }
 
   // Determine the angle to use for direction
   let angle;

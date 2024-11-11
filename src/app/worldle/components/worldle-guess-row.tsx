@@ -32,11 +32,11 @@ const WorldleGuessRow: React.FC<WorldleGuessRowProps> = (
       </Typography>
 
       <Typography sx={{flex: 1}}>
-        {guess.correctCountry ? '🎯' : guess.directionEmoji}
+        {guess.directionEmoji}
       </Typography>
 
       <Typography sx={{flex: 1}}>
-        {Math.round(100 - (guess.distanceToCorrectCountry / 20000) * 100)}%
+        {guess.accuracy}%
       </Typography>
     </Stack>
   );

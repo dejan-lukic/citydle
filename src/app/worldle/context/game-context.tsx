@@ -7,6 +7,7 @@ import { getRandomCountry } from "@/app/worldle/countries";
 interface GameContextProps {
   gameState: WorldleGameState;
   setGameState: React.Dispatch<React.SetStateAction<WorldleGameState>>;
+  resetGame: () => void;
 }
 
 export const GameContext = createContext<GameContextProps | undefined>(undefined);
@@ -17,8 +18,15 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
     countryToGuess: getRandomCountry(),
   });
 
+  const resetGame = () => {
+    setGameState({
+      guesses: [],
+      countryToGuess: getRandomCountry(),
+    });
+  };
+
   return (
-    <GameContext.Provider value={{ gameState, setGameState }}>
+    <GameContext.Provider value={{ gameState, setGameState, resetGame }}>
       {children}
     </GameContext.Provider>
   );

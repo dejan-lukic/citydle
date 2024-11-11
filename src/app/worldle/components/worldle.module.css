@@ -9,3 +9,9 @@
 .worldleCountryAutocomplete {
   margin-top: 12px;
 }
+
+.worldlePlayAgainButton {
+  margin-top: 12px;
+  color: #FFF;
+  font-weight: bold;
+}

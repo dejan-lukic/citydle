@@ -5,6 +5,7 @@ export type Guess = {
   correctCountry: boolean;
   distanceToCorrectCountry: number;
   directionEmoji: string;
+  accuracy: number;
 };
 
 export interface WorldleGameState {
