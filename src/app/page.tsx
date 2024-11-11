@@ -11,6 +11,12 @@ const games = [
     image: '/images/citydle.png',
     link: '/citydle',
   },
+  {
+    title: 'Worldle',
+    description: 'Guess the Country!',
+    image: '/images/worldle.png',
+    link: '/worldle',
+  },
 ];
 
 export default function HomePage() {
