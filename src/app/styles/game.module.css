@@ -1,0 +1,7 @@
+.gamePage {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--header-height));
+  padding: 80px;
+  font-family: var(--font-geist-sans);
+}

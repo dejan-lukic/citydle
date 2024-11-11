@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Citydle from "./components/citydle";
-import styles from "./page.module.css";
+import styles from "@/app/styles/game.module.css";
 import { GameProvider } from "@/app/citydle/context/game-context";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div className={styles.gamePage}>
       <GameProvider>
         <Citydle />
       </GameProvider>
