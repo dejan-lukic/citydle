@@ -57,14 +57,14 @@ export const countries: Country[] = [
     },
     name: "Armenia",
   },
-  {
+  /*{
     code: "AN",
     location: {
       lat: 12.226079,
       lng: -69.060087,
     },
     name: "Netherlands Antilles",
-  },
+  },*/
   {
     code: "AO",
     location: {
@@ -1161,14 +1161,14 @@ export const countries: Country[] = [
     },
     name: "Macau",
   },
-  {
+  /*{
     code: "MP",
     location: {
       lat: 17.33083,
       lng: 145.38469,
     },
     name: "Northern Mariana Islands",
-  },
+  },*/
   {
     code: "MQ",
     location: {
