@@ -553,14 +553,14 @@ export const countries: Country[] = [
     },
     name: "Falkland Islands (Malvinas)",
   },
-  {
-    code: "FM",
-    location: {
-      lat: 7.425554,
-      lng: 150.550812,
-    },
-    name: "Micronesia",
-  },
+  // {
+  //   code: "FM",
+  //   location: {
+  //     lat: 7.425554,
+  //     lng: 150.550812,
+  //   },
+  //   name: "Micronesia",
+  // },
   {
     code: "FO",
     location: {
@@ -729,14 +729,14 @@ export const countries: Country[] = [
     },
     name: "Guyana",
   },
-  {
-    code: "GZ",
-    location: {
-      lat: 31.354676,
-      lng: 34.308825,
-    },
-    name: "Gaza Strip",
-  },
+  // {
+  //   code: "GZ",
+  //   location: {
+  //     lat: 31.354676,
+  //     lng: 34.308825,
+  //   },
+  //   name: "Gaza Strip",
+  // },
   {
     code: "HK",
     location: {
@@ -865,14 +865,14 @@ export const countries: Country[] = [
     },
     name: "Italy",
   },
-  {
-    code: "JE",
-    location: {
-      lat: 49.214439,
-      lng: -2.13125,
-    },
-    name: "Jersey",
-  },
+  // {
+  //   code: "JE",
+  //   location: {
+  //     lat: 49.214439,
+  //     lng: -2.13125,
+  //   },
+  //   name: "Jersey",
+  // },
   {
     code: "JM",
     location: {
@@ -1113,14 +1113,14 @@ export const countries: Country[] = [
     },
     name: "Madagascar",
   },
-  {
-    code: "MH",
-    location: {
-      lat: 7.131474,
-      lng: 171.184478,
-    },
-    name: "Marshall Islands",
-  },
+  // {
+  //   code: "MH",
+  //   location: {
+  //     lat: 7.131474,
+  //     lng: 171.184478,
+  //   },
+  //   name: "Marshall Islands",
+  // },
   {
     code: "MK",
     location: {
@@ -1433,14 +1433,14 @@ export const countries: Country[] = [
     },
     name: "Puerto Rico",
   },
-  {
-    code: "PS",
-    location: {
-      lat: 31.952162,
-      lng: 35.233154,
-    },
-    name: "Palestine",
-  },
+  // {
+  //   code: "PS",
+  //   location: {
+  //     lat: 31.952162,
+  //     lng: 35.233154,
+  //   },
+  //   name: "Palestine",
+  // },
   {
     code: "PT",
     location: {
@@ -1777,14 +1777,14 @@ export const countries: Country[] = [
     },
     name: "Trinidad and Tobago",
   },
-  {
-    code: "TV",
-    location: {
-      lat: -7.109535,
-      lng: 177.64933,
-    },
-    name: "Tuvalu",
-  },
+  // {
+  //   code: "TV",
+  //   location: {
+  //     lat: -7.109535,
+  //     lng: 177.64933,
+  //   },
+  //   name: "Tuvalu",
+  // },
   {
     code: "TW",
     location: {
@@ -1913,14 +1913,14 @@ export const countries: Country[] = [
     },
     name: "Samoa",
   },
-  {
-    code: "XK",
-    location: {
-      lat: 42.602636,
-      lng: 20.902977,
-    },
-    name: "Kosovo",
-  },
+  // {
+  //   code: "XK",
+  //   location: {
+  //     lat: 42.602636,
+  //     lng: 20.902977,
+  //   },
+  //   name: "Kosovo",
+  // },
   {
     code: "YE",
     location: {
